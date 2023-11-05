@@ -1,15 +1,6 @@
 import Announcment from "./Announcment";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
-import { AnnouncmentType, QuizType, State } from "../types";
-
-// const announcments: AnnouncmentType[] = [
-//   {
-//     author: "Folan Elfolani",
-//     imageSrc: "null",
-//     text: "lorem ipsum dolor sit amet",
-//     course: "thing 101",
-//   },
-// ];
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { State } from "../types";
 
 function Announcements() {
   const announcments = useSelector((state: State) => state.announcments);

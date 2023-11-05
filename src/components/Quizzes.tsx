@@ -1,16 +1,9 @@
 import Quiz from "./Quiz";
-const quizzes: QuizType[] = [
-  {
-    title: "The quiz",
-    type: "quiz",
-    link: "null",
-    course: "Something 101",
-    topic: "some topic",
-    dueDate: "13/11/2023 12:00 PM",
-  },
-];
+import { useSelector } from "react-redux/es/hooks/useSelector";
+import { State } from "../types";
 
 function Quizzes() {
+  const quizzes = useSelector((state: State) => state.quizzes);
   const quizzesDisplay = quizzes.map((quiz) => <Quiz data={quiz} />);
   return (
     <section className="quizzes">
@@ -22,12 +15,3 @@ function Quizzes() {
 }
 
 export default Quizzes;
-
-type QuizType = {
-  title: string;
-  type: "quiz" | "assignment";
-  link: string;
-  course: string;
-  topic: string;
-  dueDate: string;
-};
