@@ -9,9 +9,15 @@ function Header() {
         <input type="search" />
       </div>
       <div className="buttons">
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>
+          <span className="material-symbols-outlined">notifications</span>
+        </button>
+        <button>
+          <span className="material-symbols-outlined">mail</span>
+        </button>
+        <button>
+          <img src="anyware.jpeg" alt="" />
+        </button>
       </div>
     </header>
   );

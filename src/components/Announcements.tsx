@@ -1,14 +1,18 @@
 import Announcment from "./Announcment";
-const announcments: AnnouncmentType[] = [
-  {
-    author: "Folan Elfolani",
-    imageSrc: "null",
-    text: "lorem ipsum dolor sit amet",
-    course: "thing 101",
-  },
-];
+import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import { AnnouncmentType, QuizType, State } from "../types";
+
+// const announcments: AnnouncmentType[] = [
+//   {
+//     author: "Folan Elfolani",
+//     imageSrc: "null",
+//     text: "lorem ipsum dolor sit amet",
+//     course: "thing 101",
+//   },
+// ];
 
 function Announcements() {
+  const announcments = useSelector((state: State) => state.announcments);
   const announcmentsDisplay = announcments.map((announcment) => (
     <Announcment data={announcment} />
   ));
@@ -22,10 +26,3 @@ function Announcements() {
 }
 
 export default Announcements;
-
-type AnnouncmentType = {
-  author: string;
-  imageSrc: string;
-  text: string;
-  course: string;
-};

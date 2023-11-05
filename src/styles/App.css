@@ -82,6 +82,21 @@ header > h2 {
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.7);
 }
+header .buttons {
+  display: flex;
+  gap: 5px;
+}
+header button {
+  background: none;
+  border: none;
+  transform: scale(1.5);
+  color: #075985;
+}
+header img {
+  width: 20px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
 
 /* tips */
 
