@@ -1,6 +1,6 @@
 function Tips() {
   return (
-    <section>
+    <section className="tips">
       <h2 className="exams">Exams Time</h2>
       <p className="exams">
         Here we are, Are you ready to fight? Don't worry, we prepared some tips

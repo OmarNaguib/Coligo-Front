@@ -13,7 +13,7 @@ function Announcements() {
     <Announcment data={announcment} />
   ));
   return (
-    <section>
+    <section className="announcements">
       <h2>Announcments</h2>
       <p>everything you need to know</p>
       <ul className="quizzes">{announcmentsDisplay}</ul>

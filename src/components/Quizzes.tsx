@@ -13,7 +13,7 @@ const quizzes: QuizType[] = [
 function Quizzes() {
   const quizzesDisplay = quizzes.map((quiz) => <Quiz data={quiz} />);
   return (
-    <section>
+    <section className="quizzes">
       <h2>What's due</h2>
       <p>assignments and quizzes</p>
       <ul className="quizzes">{quizzesDisplay}</ul>
