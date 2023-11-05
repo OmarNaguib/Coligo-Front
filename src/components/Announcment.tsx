@@ -1,4 +1,4 @@
-function Announcment({ data }: { data: Announcment }) {
+function Announcment({ data }: { data: AnnouncmentType }) {
   return (
     <li className="announcement">
       <img src={data.imageSrc} alt="" />
@@ -13,7 +13,7 @@ function Announcment({ data }: { data: Announcment }) {
 
 export default Announcment;
 
-type Announcment = {
+type AnnouncmentType = {
   author: string;
   imageSrc: string;
   text: string;

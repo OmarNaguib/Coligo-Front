@@ -1,5 +1,12 @@
 import Announcment from "./Announcment";
-const announcments: Announcment[] = [];
+const announcments: AnnouncmentType[] = [
+  {
+    author: "Folan Elfolani",
+    imageSrc: "null",
+    text: "lorem ipsum dolor sit amet",
+    course: "thing 101",
+  },
+];
 
 function Announcements() {
   const announcmentsDisplay = announcments.map((announcment) => (
@@ -9,9 +16,16 @@ function Announcements() {
     <section>
       <h2>Announcments</h2>
       <p>everything you need to know</p>
-      <ul>{announcmentsDisplay}</ul>
+      <ul className="quizzes">{announcmentsDisplay}</ul>
     </section>
   );
 }
 
 export default Announcements;
+
+type AnnouncmentType = {
+  author: string;
+  imageSrc: string;
+  text: string;
+  course: string;
+};
