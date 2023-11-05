@@ -8,9 +8,11 @@ function Header() {
       <div>
         <input type="search" />
       </div>
-      <button></button>
-      <button></button>
-      <button></button>
+      <div className="buttons">
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
     </header>
   );
 }

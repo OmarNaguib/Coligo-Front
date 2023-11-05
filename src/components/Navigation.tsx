@@ -6,22 +6,37 @@ function Navigation() {
       <h1>Coligo</h1>
       <ul>
         <li>
-          <a href="">Dashboard</a>
+          <button className="selected">
+            <span className="material-symbols-outlined">home</span>Dashboard
+          </button>
         </li>
         <li>
-          <a href="">Scheduele</a>
+          <button>
+            <span className="material-symbols-outlined">calendar_month</span>
+            Scheduele
+          </button>
         </li>
         <li>
-          <a href="">Courses</a>
+          <button>
+            <span className="material-symbols-outlined">book_4</span>Courses
+          </button>
         </li>
         <li>
-          <a href="">Gradebook</a>
+          <button>
+            <span className="material-symbols-outlined">school</span>Gradebook
+          </button>
         </li>
         <li>
-          <a href="">Performance</a>
+          <button>
+            <span className="material-symbols-outlined">chart_data</span>
+            Performance
+          </button>
         </li>
         <li>
-          <a href="">Announcement</a>
+          <button>
+            <span className="material-symbols-outlined">campaign</span>
+            Announcement
+          </button>
         </li>
       </ul>
     </nav>
