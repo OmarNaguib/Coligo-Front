@@ -8,8 +8,8 @@ function Quizzes() {
   return (
     <section className="quizzes">
       <h2>What's due</h2>
-      <p>assignments and quizzes</p>
-      <ul className="quizzes">{quizzesDisplay}</ul>
+      <p className="description">Sometimes "LATER" becomes "NEVER". Go Now</p>
+      <ul>{quizzesDisplay}</ul>
     </section>
   );
 }

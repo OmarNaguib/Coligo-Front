@@ -26,7 +26,15 @@ const quizzes: QuizType[] = [
   {
     title: "The quiz",
     type: "quiz",
-    link: "null",
+    link: "https://quizizz.com/",
+    course: "Something 101",
+    topic: "some topic",
+    dueDate: "13/11/2023 12:00 PM",
+  },
+  {
+    title: "The quiz",
+    type: "quiz",
+    link: "https://quizizz.com/",
     course: "Something 101",
     topic: "some topic",
     dueDate: "13/11/2023 12:00 PM",
