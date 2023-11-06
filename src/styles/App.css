@@ -20,7 +20,7 @@ p {
 #root {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 300px 1fr 300px;
+  grid-template-columns: 300px 1fr 250px;
   grid-template-rows: 80px 250px 1fr;
 
   background-color: #ececec;
@@ -160,5 +160,50 @@ p.exams {
 }
 
 /* announcments */
+.announcements {
+  margin: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.announcements h2,
+.announcements .description {
+  color: rgb(0, 0, 0, 0.6);
+}
+.announcements h3 {
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+.announcements img {
+  width: 30px;
+  align-self: center;
+}
+.announcements ul {
+  padding: 10px;
+  margin: 20px;
+}
+.announcements li {
+  display: flex;
+  /* align-items: center; */
+}
+.announcements .left {
+  width: max-content;
+  border-right: 1px solid rgb(0, 0, 0, 0.6);
+  display: flex;
+  gap: 15px;
+  /* align-items: center; */
+  margin-right: 30px;
+  padding-right: 30px;
+}
+.announcements .text {
+  margin-top: 18px;
+}
+.announcement {
+  margin-bottom: 25px;
+}
+p.course {
+  color: rgb(0, 0, 0, 0.6);
+}
 
 /* quizzes */

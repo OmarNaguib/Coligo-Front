@@ -10,8 +10,8 @@ function Announcements() {
   return (
     <section className="announcements">
       <h2>Announcments</h2>
-      <p>everything you need to know</p>
-      <ul className="quizzes">{announcmentsDisplay}</ul>
+      <p className="description">We educate warriors! keep updated :)</p>
+      <ul>{announcmentsDisplay}</ul>
     </section>
   );
 }

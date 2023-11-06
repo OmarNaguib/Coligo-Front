@@ -3,10 +3,22 @@ import { AnnouncmentType, QuizType, State } from "../types";
 
 const announcments: AnnouncmentType[] = [
   {
-    author: "Folan Elfolani",
-    imageSrc: "null",
-    text: "lorem ipsum dolor sit amet",
-    course: "thing 101",
+    author: "Mr.Ahmed Mostafa",
+    imageSrc: "anyware.jpeg",
+    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
+    course: "Math 101",
+  },
+  {
+    author: "Mr.Ahmed Mostafa",
+    imageSrc: "anyware.jpeg",
+    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
+    course: "Math 101",
+  },
+  {
+    author: "Mr.Ahmed Mostafa",
+    imageSrc: "anyware.jpeg",
+    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
+    course: "Math 101",
   },
 ];
 
