@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function Navigation() {
+  const navRef = useRef<HTMLElement>(null);
   return (
-    <nav>
-      <div style={{ display: "contents" }}>
+    <nav
+      ref={navRef}
+      onClick={() => {
+        if (navRef.current) navRef.current.classList.toggle("modal-visible");
+      }}
+    >
+      <div
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <h1>Coligo</h1>
         <ul>
           <li>

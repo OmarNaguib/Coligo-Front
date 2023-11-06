@@ -1,9 +1,18 @@
 function Header() {
   return (
     <header>
+      <button
+        className="not-desktop"
+        onClick={() => {
+          const nav = document.querySelector("nav");
+          if (nav) nav.classList.toggle("modal-visible");
+        }}
+      >
+        <span className="material-symbols-outlined">menu</span>
+      </button>
       <h2>Welcome Talia,</h2>
       <div className="right">
-        <div>
+        <div className="mobile-hidden">
           <input type="search" placeholder="search" />
         </div>
         <div className="buttons">
