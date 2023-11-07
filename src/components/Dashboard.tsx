@@ -5,7 +5,35 @@ import Announcements from "./Announcements";
 import Quizzes from "./Quizzes";
 import "../styles/App.css";
 
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+//  { quizzes: quizzes, announcments: announcments }
+
 function Dashboard({ setIsAuth }: propsType) {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    async function getData() {
+      console.log("inFunction");
+      const announcementsResponse = await fetch(
+        "http://localhost:3000/api/announcements/"
+      );
+      console.log("here", announcementsResponse);
+      const announcements = await announcementsResponse.json();
+      const quizzesResponse = await fetch("http://localhost:3000/api/quizzes/");
+      const quizzes = await quizzesResponse.json();
+      dispatch({
+        type: "SET",
+        payload: {
+          newState: {
+            quizzes: quizzes.quizzes,
+            announcements: announcements.announcements,
+          },
+        },
+      });
+    }
+    getData();
+  }, []);
+
   return (
     <>
       <Header></Header>

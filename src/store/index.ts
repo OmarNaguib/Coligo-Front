@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { AnnouncmentType, QuizType, State } from "../types";
+import { AnnouncementType, QuizType, State } from "../types";
 
-const announcments: AnnouncmentType[] = [
+const announcements: AnnouncementType[] = [
   {
     author: "Mr.Ahmed Mostafa",
     imageSrc: "anyware.jpeg",
@@ -42,10 +42,11 @@ const quizzes: QuizType[] = [
 ];
 
 const reducerFn = (
-  state: State = { quizzes: quizzes, announcments: announcments },
+  state: State = { quizzes: quizzes, announcements: announcements },
   action: { type: string; payload: { newState: State } }
 ) => {
-  if (action.type === "SET") return action.payload.newState;
+  console.log(action);
+  if (action.type === "SET") return { ...action.payload.newState };
   return state;
 };
 

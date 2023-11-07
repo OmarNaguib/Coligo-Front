@@ -1,6 +1,6 @@
 export type State = {
   quizzes: QuizType[];
-  announcments: AnnouncmentType[];
+  announcements: AnnouncementType[];
 };
 
 export type QuizType = {
@@ -12,7 +12,7 @@ export type QuizType = {
   dueDate: string;
 };
 
-export type AnnouncmentType = {
+export type AnnouncementType = {
   author: string;
   imageSrc: string;
   text: string;
