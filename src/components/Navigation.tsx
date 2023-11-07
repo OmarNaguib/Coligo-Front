@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-function Navigation() {
+function Navigation({ setIsAuth }: propsType) {
   const navRef = useRef<HTMLElement>(null);
   return (
     <nav
@@ -49,10 +49,24 @@ function Navigation() {
               Announcement
             </button>
           </li>
+          <li>
+            <button
+              onClick={() => {
+                setIsAuth(false);
+              }}
+            >
+              <span className="material-symbols-outlined">logout</span>
+              Log out
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
   );
 }
+
+type propsType = {
+  setIsAuth: React.Dispatch<React.SetStateAction<boolean>>;
+};
 
 export default Navigation;

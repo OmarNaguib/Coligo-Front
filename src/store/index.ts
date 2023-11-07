@@ -43,7 +43,10 @@ const quizzes: QuizType[] = [
 
 const reducerFn = (
   state: State = { quizzes: quizzes, announcments: announcments },
-  action: { type: string }
-) => state;
+  action: { type: string; payload: { newState: State } }
+) => {
+  if (action.type === "SET") return action.payload.newState;
+  return state;
+};
 
 export const store = configureStore({ reducer: reducerFn });

@@ -373,3 +373,22 @@ p.course {
     display: none;
   }
 }
+
+/* Home */
+.home {
+  grid-row: 1 /-1;
+  grid-column: 1/-1;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home button {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
