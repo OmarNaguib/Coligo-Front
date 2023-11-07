@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 
 function Navigation({ setIsAuth }: propsType) {
   const navRef = useRef<HTMLElement>(null);
