@@ -7,10 +7,10 @@ import "../styles/App.css";
 
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-//  { quizzes: quizzes, announcments: announcments }
 
 function Dashboard({ setIsAuth }: propsType) {
   const dispatch = useDispatch();
+  // Get data from Api
   useEffect(() => {
     async function getData() {
       console.log("inFunction");

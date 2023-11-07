@@ -1,48 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { AnnouncementType, QuizType, State } from "../types";
-
-const announcements: AnnouncementType[] = [
-  {
-    author: "Mr.Ahmed Mostafa",
-    imageSrc: "anyware.jpeg",
-    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
-    course: "Math 101",
-  },
-  {
-    author: "Mr.Ahmed Mostafa",
-    imageSrc: "anyware.jpeg",
-    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
-    course: "Math 101",
-  },
-  {
-    author: "Mr.Ahmed Mostafa",
-    imageSrc: "anyware.jpeg",
-    text: "Hi my heros! i just want you ready to our exams and focus on remaining assesments to gain more grades. good luck my warriors!😄",
-    course: "Math 101",
-  },
-];
-
-const quizzes: QuizType[] = [
-  {
-    title: "The quiz",
-    type: "quiz",
-    link: "https://quizizz.com/",
-    course: "Something 101",
-    topic: "some topic",
-    dueDate: "13/11/2023 12:00 PM",
-  },
-  {
-    title: "The quiz",
-    type: "quiz",
-    link: "https://quizizz.com/",
-    course: "Something 101",
-    topic: "some topic",
-    dueDate: "13/11/2023 12:00 PM",
-  },
-];
+import { State } from "../types";
 
 const reducerFn = (
-  state: State = { quizzes: quizzes, announcements: announcements },
+  state: State = { quizzes: [], announcements: [] },
   action: { type: string; payload: { newState: State } }
 ) => {
   console.log(action);
