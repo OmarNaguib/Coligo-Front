@@ -10,7 +10,7 @@ function Header() {
       >
         <span className="material-symbols-outlined">menu</span>
       </button>
-      <h2>Welcome Talia,</h2>
+      <h2>Welcome Anyware,</h2>
       <div className="right">
         <div className="mobile-hidden">
           <input type="search" placeholder="search" />
