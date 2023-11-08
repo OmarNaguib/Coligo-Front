@@ -4,10 +4,8 @@ import { State } from "../types";
 
 function Announcements() {
   const announcements = useSelector((state: State) => state.announcements);
-  console.log(announcements);
-
   const announcementsDisplay = announcements.map((announcment) => (
-    <Announcment data={announcment} />
+    <Announcment data={announcment} key={announcment.text} />
   ));
   return (
     <section className="announcements">

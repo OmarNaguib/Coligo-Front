@@ -13,11 +13,9 @@ function Dashboard({ setIsAuth }: propsType) {
   // Get data from Api
   useEffect(() => {
     async function getData() {
-      console.log("inFunction");
       const announcementsResponse = await fetch(
         "http://localhost:3000/api/announcements/"
       );
-      console.log("here", announcementsResponse);
       const announcements = await announcementsResponse.json();
       const quizzesResponse = await fetch("http://localhost:3000/api/quizzes/");
       const quizzes = await quizzesResponse.json();

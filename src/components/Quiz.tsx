@@ -17,7 +17,9 @@ function Quiz({ data }: { data: QuizType }) {
         <p>Course: {data.course}</p>
         <p>Topic: {data.topic}</p>
         <p>Due Date: {data.dueDate}</p>
-        <a href={data.link}>{buttonText}</a>
+        <a href={data.link} target="_blank">
+          {buttonText}
+        </a>
       </div>
     </li>
   );

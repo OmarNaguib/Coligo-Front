@@ -5,7 +5,6 @@ const reducerFn = (
   state: State = { quizzes: [], announcements: [] },
   action: { type: string; payload: { newState: State } }
 ) => {
-  console.log(action);
   if (action.type === "SET") return { ...action.payload.newState };
   return state;
 };
